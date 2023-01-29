@@ -2,9 +2,6 @@ import datetime
 
 from collections import defaultdict, OrderedDict
 
-users=[{'name':'Kell', 'birthday':datetime.date(2005, 2, 2)}, {'name':'Kely', 'birthday':datetime.date(2001, 1, 5)},
-       {'name':'Kety', 'birthday':datetime.date(2000, 2, 2)},{'name':'Kem', 'birthday':datetime.date(1999, 2, 4)}]
-
 def get_birthdays_per_week(users):
     birth_list=[]
     grouped_birthday = defaultdict(list)
@@ -28,9 +25,4 @@ def get_birthdays_per_week(users):
             result[day] = grouped_birthday[day]
     print(result)
     return(result)
-
-
-
-
-
 
